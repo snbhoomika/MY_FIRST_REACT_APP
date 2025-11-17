@@ -1,5 +1,5 @@
 import './Welcome1.css';
-
+import { useNavigate } from 'react-router-dom';
 import { Button, ConfigProvider, Space } from 'antd';
 import { createStyles } from 'antd-style';
 
@@ -27,6 +27,7 @@ const useStyle = createStyles(({ prefixCls, css }) => ({
 
 const Welcome1 = () => {
     const { styles } = useStyle();
+    const navigate = useNavigate();
 
     return (
 
@@ -41,27 +42,9 @@ const Welcome1 = () => {
                 }}
             >
                 <Space>
-                    <Button
-                        type="primary"
-                        size="large"
-
-                    >
-                        Login
-                    </Button>
-                    <Button
-                        type="primary"
-                        size="large"
-
-                    >
-                        Tables
-                    </Button>
-                    <Button
-                        type="primary"
-                        size="large"
-
-                    >
-                        Concepts
-                    </Button>
+                    <Button type="primary" size="large" onClick={() => navigate('/Login')}> Login </Button>
+                    <Button type="primary" size="large" onClick={() => navigate('/Tables')}> Tables </Button>
+                    <Button type="primary" size="large" onClick={() => navigate('/Cocepts')}> Concepts </Button>
                 </Space>
             </ConfigProvider>
         </div>

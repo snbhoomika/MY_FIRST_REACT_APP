@@ -22,13 +22,12 @@ const Concepts = () => {
             <h3 style={{ textAlign: "center" }}>Things I used in this project:</h3>
 
             <ol>
-                <li>Create Vite App using template</li>
-                <li>Installed Antd UI library</li>
-                <li>Fetched data using axios</li>
+                <li>Created Vite App using template</li>
+                <li>Installed Antd UI library and used Gradient style for Buttons</li>
+                <li>Fetched data using axios (API call)</li>
                 <li>Used React Router for routing</li>
-                <li>React hooks: useState & useEffect</li>
-                <li>Styled button using antd-style</li>
                 <li>Navigation using useNavigate</li>
+                <li>Added Page_Not_Found with route path="*"</li>
             </ol>
         </div>
     );

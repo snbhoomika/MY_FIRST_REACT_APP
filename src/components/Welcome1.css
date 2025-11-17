@@ -1,0 +1,22 @@
+.welcome-container {
+  height: 100vh;
+  background-image: url('../assets/bg1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: top;   
+  align-items: center;       
+  gap: 20px;                  
+}
+.welcome_header {
+  color: rgb(9, 9, 9);
+  font-size: 32px;
+  font-weight: bold;
+  padding-top: 10%;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+
+
+}

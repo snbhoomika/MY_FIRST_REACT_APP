@@ -44,7 +44,7 @@ const Welcome1 = () => {
                 <Space>
                     <Button type="primary" size="large" onClick={() => navigate('/Login')}> Login </Button>
                     <Button type="primary" size="large" onClick={() => navigate('/Tables')}> Tables </Button>
-                    <Button type="primary" size="large" onClick={() => navigate('/Cocepts')}> Concepts </Button>
+                    <Button type="primary" size="large" onClick={() => navigate('/Concepts')}> Concepts </Button>
                 </Space>
             </ConfigProvider>
         </div>

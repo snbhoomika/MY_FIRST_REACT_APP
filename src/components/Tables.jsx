@@ -1,6 +1,7 @@
 import { Table } from 'antd';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import './Tables.css';
 const Tables = () => {
     const tableColumns = [
         {

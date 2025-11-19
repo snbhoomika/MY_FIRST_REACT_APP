@@ -4,7 +4,7 @@ import { Button, ConfigProvider, Space } from 'antd';
 import { createStyles } from 'antd-style';
 
 const useStyle = createStyles(({ prefixCls, css }) => ({
-    linearGradientButton: css`
+  linearGradientButton: css`
     &.${prefixCls}-btn-primary:not([disabled]):not(.${prefixCls}-btn-dangerous) {
       > span {
         position: relative;
@@ -26,29 +26,31 @@ const useStyle = createStyles(({ prefixCls, css }) => ({
 }));
 
 const Welcome1 = () => {
-    const { styles } = useStyle();
-    const navigate = useNavigate();
+  const { styles } = useStyle();
+  const navigate = useNavigate();
 
-    return (
+  return (
 
-        <div className="welcome-container">
-            <div className="welcome_header">
-                Welcome to my first React Project
-            </div>
+    <div className="welcome-container">
+      <div className="welcome_header">
+        Welcome to my first React Project
+      </div>
 
-            <ConfigProvider
-                button={{
-                    className: styles.linearGradientButton
-                }}
-            >
-                <Space>
-                    <Button type="primary" size="large" onClick={() => navigate('/Login')}> Login </Button>
-                    <Button type="primary" size="large" onClick={() => navigate('/Tables')}> Tables </Button>
-                    <Button type="primary" size="large" onClick={() => navigate('/Concepts')}> Concepts </Button>
-                </Space>
-            </ConfigProvider>
-        </div>
-    );
+      <ConfigProvider
+        button={{
+          className: styles.linearGradientButton
+        }}
+      >
+        <Space>
+          <Button type="primary" size="large" onClick={() => navigate('/Login')}> Login </Button>
+          <Button type="primary" size="large" onClick={() => navigate('/Tables')}> Tables </Button>
+          <Button type="primary" size="large" onClick={() => navigate('/Tables1')}> Tables1 </Button>
+
+          <Button type="primary" size="large" onClick={() => navigate('/Concepts')}> Concepts </Button>
+        </Space>
+      </ConfigProvider>
+    </div>
+  );
 };
 
 export default Welcome1;
